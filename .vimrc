@@ -1,1 +1,1 @@
-/Users/Liam/Public/Dotfiles
+/Users/Liam/Desktop/Github/Dotfiles/.vimrc
