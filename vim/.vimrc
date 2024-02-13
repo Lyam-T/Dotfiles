@@ -82,3 +82,10 @@ set timeoutlen=100
 inoremap jk <ESC>
 set timeoutlen=100
 inoremap kj <ESC>
+
+" vim-plug
+call plug#begin('~/.vim/plugged')
+" Add your plugins here
+" markdown preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+call plug#end()
