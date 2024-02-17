@@ -14,6 +14,9 @@ set nocompatible
 " Turn on syntax highlighting.
 syntax on
 
+" Turn on spelling
+set spell
+
 " Disable the default Vim startup message.
 set shortmess+=I
 
@@ -21,7 +24,7 @@ set shortmess+=I
 set number
 
 " This enables relative line numbering mode. With both number and
-" relativenumber enabled, the current line shows the true line number, while
+" relative number enabled, the current line shows the true line number, while
 " all other lines (above and below) are numbered relative to the current line.
 " This is useful because you can tell, at a glance, what count is needed to
 " jump up or down to a particular line, by {count}k to go up or {count}j to go
@@ -88,4 +91,11 @@ call plug#begin('~/.vim/plugged')
 " Add your plugins here
 " markdown preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+" language tool
+Plug 'dpelle/vim-LanguageTool'
 call plug#end()
+
+" plug-in configuration
+" language tool
+:let g:languagetool_jar='/Users/Liam/Desktop/Dotfiles/vim/LanguageTool-5.2/languagetool-commandline.jar'
