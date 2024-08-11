@@ -1,0 +1,17 @@
+set relativenumber
+set ignorecase
+
+""" search
+set smartcase
+set incsearch
+set wrapscan
+set hlsearch
+
+""" mapping
+set timeoutlen=100
+inoremap jk <Esc>
+set timeoutlen=100
+inoremap kj <Esc>
+
+""" plugin
+Plug 'tpope/vim-surround'
