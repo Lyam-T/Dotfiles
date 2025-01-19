@@ -64,10 +64,17 @@ spoon.ClipboardTool:bindHotkeys({
 -- AppLaucher
 hs.loadSpoon("AppLauncher")
 spoon.AppLauncher:bindHotkeys({
-  t = "Terminal",
-  d = "Discord",
+  -- productivity
   c = "Calendar",
   s = "Safari",
-  n = "Notion"
+  n = "Notion",
+  f = "Finder",
+  -- ide
+  t = "Terminal",
+  g = "Sourcetree",
+  i = "IntelliJ IDEA", 
+  -- social media
+  d = "Discord",
+  w = "WhatsApp"
 })
 
